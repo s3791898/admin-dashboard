@@ -17,12 +17,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#sidebar ul li img,
-#sidebar .dashboard img,
-.project-container .project .actions img,
 #header .search-bar label img,
 #header .profile-container .bell-img,
-#header .profile-container .pfp-small {
+#header .profile-container .pfp-small,
+#sidebar ul li img,
+#sidebar .dashboard img,
+#content .project-container .project .project-actions img {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
