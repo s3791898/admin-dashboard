@@ -13,7 +13,7 @@ body {
 body {
   max-height: 100vh;
   display: grid;
-  grid-template: auto 4fr / 0.8fr 4fr;
+  grid-template: auto 4fr / 1fr 4fr;
   font-family: "Roboto", sans-serif;
 }
 
@@ -21,8 +21,10 @@ body {
 #sidebar .dashboard img,
 .project-container .project .actions img,
 #header .search-bar label img,
-#header .profile-container .bell-img {
+#header .profile-container .bell-img,
+#header .profile-container .pfp-small {
   height: 2rem;
+  width: 2rem;
   cursor: pointer;
 }
 
@@ -47,6 +49,7 @@ body {
 
 .search-bar label img {
   width: 1.4rem;
+  cursor: pointer;
 }
 
 .search-input {
@@ -62,6 +65,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.profile-container .bell-img,
+.profile-container h3,
+.profile-container .pfp-small {
+  cursor: pointer;
 }
 
 .greeting-container {
@@ -103,7 +112,7 @@ body {
   color: white;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .dashboard {
@@ -114,12 +123,29 @@ body {
   font-size: 2rem;
 }
 
-#sidebar li {
+#sidebar ul li {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  padding-left: 40px;
 }
+
+#sidebar ul li:hover {
+  background-color: #4a9de2;
+  border-left: 3px solid white;
+}
+
+#sidebar ul {
+  padding: 0;
+}
+
+#sidebar ul li p,
+#sidebar .dashboard h3 {
+  cursor: pointer;
+}
+
+
 
 /* Content Styling */
 
