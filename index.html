@@ -4,74 +4,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>Admin Dashboard</title>
 </head>
 
 <body>
-  <header class="header">
-    <!-- Add the rest of the elements for the header section -->
-    <div class="searchbar">
-
+  <header id="header">
+    <div class="search-bar">
+      <label for="search-field">
+        <img src="/assets/images/magnify.svg" alt="Search Icon">
+      </label>
+      <input type="text" id="search-field" class="search-input">
+    </div>
+    <div class="profile-container">
+      <img class="bell-img" src="/assets/images/bell-ring-outline.svg" alt="Bell Icon">
+      <img src="assets/images/profile-small.svg" alt="User Profile Picture">
+      <h3>Morgan Oakley</h3>
+    </div>
+    <div class="greeting-container">
+      <img src="assets/images/profile-big.svg" alt=" User Profile Picture">
+      <div class="greeting-text">
+        <p>Hi there,</p>
+        <p>Morgan Oakley (@morgan)</p>
+      </div>
+    </div>
+    <div class="btns-container">
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
     </div>
   </header>
 
-  <nav>
-    <div class="sidebar">
-      <div class="dashboard">
+  <nav id="sidebar">
+    <div class="dashboard">
+      <img src="/assets/images/view-dashboard-outline.svg" alt="Dashboard">
+      <h3>Dashboard</h3>
+    </div>
+
+    <ul class="group-1">
+      <li>
+        <img src="/assets/images/home.svg" alt="Home">
+        <p>Home</p>
+      </li>
+      <li>
+        <img src="/assets/images/card-account-details-outline.png" alt="Profile">
+        <p>Profile</p>
+      </li>
+      <li>
+        <img src="/assets/images/message-reply.svg" alt="Messages">
+        <p>Messages</p>
+      </li>
+      <li>
+        <img src="/assets/images/clock-time-three.svg" alt="History">
+        <p>History</p>
+      </li>
+      <li>
+        <img src="/assets/images/note-multiple.png" alt="Tasks">
+        <p>Tasks</p>
+      </li>
+      <li>
+        <img src="/assets/images/account-group.png" alt="Communities">
+        <p>Communities</p>
+      </li>
+    </ul>
+
+    <ul class="group-2">
+      <li>
+        <img src="/assets/images/cog.png" alt="Settings">
+        <p>Settings</p>
+      </li>
+      <li>
+        <img src="/assets/images/help-box.svg" alt="Support">
+        <p>Support</p>
+      </li>
+      <li>
+        <img src="/assets/images/shield-check.svg" alt="Privacy">
+        <p>Privacy</p>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="content">
+    <div class="project-container">
+      <h4>Your Projects</h4>
+      <div class="project">
+        <div>
+          <h5 class="project-header">Super Cool Project</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae ipsa possimus est nobis.</p>
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <h5 class="project-header">Less Cool Project</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae ipsa possimus est nobis.</p>
+        </div>
+        <div class="actions">
+          <img src="/assets/images/star-plus-outline.svg" alt="Add Favourite">
+          <img src="/assets/images/eye-plus-outline.svg" alt="Add Visit">
+          <img src="/assets/images/source-fork.svg" alt="Source">
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <h5 class="project-header">Impossible App</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae ipsa possimus est nobis.</p>
+        </div>
+        <div class="actions">
+          <img src="/assets/images/star-plus-outline.svg" alt="Add Favourite">
+          <img src="/assets/images/eye-plus-outline.svg" alt="Add Visit">
+          <img src="/assets/images/source-fork.svg" alt="Source">
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <h5 class="project-header">Easy Peasy App</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae ipsa possimus est nobis.</p>
+        </div>
+        <div class="actions">
+          <img src="/assets/images/star-plus-outline.svg" alt="Add Favourite">
+          <img src="/assets/images/eye-plus-outline.svg" alt="Add Visit">
+          <img src="/assets/images/source-fork.svg" alt="Source">
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <h5 class="project-header">Ad Blocker</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae ipsa possimus est nobis.</p>
+        </div>
+        <div class="actions">
+          <img src="/assets/images/star-plus-outline.svg" alt="Add Favourite">
+          <img src="/assets/images/eye-plus-outline.svg" alt="Add Visit">
+          <img src="/assets/images/source-fork.svg" alt="Source">
+        </div>
+      </div>
+      <div class="project">
+        <div>
+          <h5 class="project-header">Money Maker</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae ipsa possimus est nobis.</p>
+        </div>
+        <div class="actions">
+          <img src="/assets/images/star-plus-outline.svg" alt="Add Favourite">
+          <img src="/assets/images/eye-plus-outline.svg" alt="Add Visit">
+          <img src="/assets/images/source-fork.svg" alt="Source">
+        </div>
+      </div>
+    </div>
+
+    <div id="announcements">
+      <h4>Announcements</h4>
+      <div class="annoucement-content">
+        <div class="announcement">
+          <h6>Site Maintenance</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci dolor totam odit cum aliquid.</p>
+        </div>
+        <div class="announcement">
+          <h6>Community Share Day</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsam illo soluta velit temporibus dicta.
+          </p>
+        </div>
+        <div class="announcement">
+          <h6>Updated Privacy Policy</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam ipsa nostrum laboriosam necessitatibus!
+            Repellendus!</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="trending">
+      <h4>Trending</h4>
+      <div class="trending-content">
+        <div class="trending-user">
+          <img class="trend-img" src="/assets/images/profile-big.svg" alt="Profile Picture">
+          <p>
+            <span class="trend-tag">@tegan</span>
+            <br>
+            <span class="trend-text">World Peace Builder</span>
+          </p>
+        </div>
+        <div class="trending-user">
+          <img class="trend-img" src="/assets/images/profile-big.svg" alt="Profile Picture">
+          <p>
+            <span class="trend-tag">@morgan</span>
+            <br>
+            <span class="trend-text">Super Cool Project</span>
+          </p>
+        </div>
+        <div class="trending-user">
+          <img class="trend-img" src="/assets/images/profile-big.svg" alt="Profile Picture">
+          <p>
+            <span class="trend-tag">@kendall</span>
+            <br>
+            <span class="trend-text">Life Changing App</span>
+          </p>
+        </div>
+        <div class="trending-user">
+          <img class="trend-img" src="/assets/images/profile-big.svg" alt="Profile Picture">
+          <p>
+            <span class="trend-tag">@alex</span>
+            <br>
+            <span class="trend-text">No Traffic Maker</span>
+          </p>
+        </div>
 
       </div>
-
-      <ul class="group-1">
-
-      </ul>
-      <ul class="group-2">
-
-      </ul>
-  </nav>
-  </div>
-
-  <main>
-    <div class="project-container">
-      <div class="head">Your Projects</div>
-      <article>
-        <div class="project">
-          <div>
-            Super Duper Cool Project
-          </div>
-        </div>
-      </article>
     </div>
 
-    <div class="announcements">
-      <div class="head">Announcement</div>
-      <article>
-        <div class="announcement-1">
-
-        </div>
-        <div class="announcement-2">
-
-        </div>
-        <div class="announcement-3">
-
-        </div>
-      </article>
-    </div>
-
-    <div class="trending">
-      <div class="head">Trending</div>
-      <article>
-        <div class="trending-user-1">
-
-        </div>
-        <div class="trending-user-2">
-
-        </div>
-        <div class="trending-user-3">
-
-        </div>
-    </div>
-    </article>
     </div>
   </main>
 
