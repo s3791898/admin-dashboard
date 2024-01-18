@@ -102,7 +102,7 @@ body {
   border-radius: 20px;
   border: none;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 30px;
   font-weight: bold;
 }
 
@@ -212,6 +212,30 @@ body {
   flex-direction: column;
 }
 
+#content .announcement-and-trading .announcements h4 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#content .announcement-and-trading .trending h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+#content .announcement-and-trading .announcements .announcement-content .announcement:nth-child(1),
+#content .announcement-and-trading .announcements .announcement-content .announcement:nth-child(2) {
+  border-bottom: 1px solid #E5E7EB;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#content .announcement-and-trading .announcements .announcement-content .announcement:nth-child(3) {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2%;
+}
+
 #content .announcement-and-trading .announcements .announcement-content,
 #content .announcement-and-trading .trending .trending-content {
   background-color: white;
@@ -223,6 +247,11 @@ body {
   justify-content: space-around;
 }
 
+#content .announcement-and-trading .announcements .announcement-content .announcement {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 #content .announcement-and-trading .trending .trending-content .trend {
   display: flex;
   align-items: center;
@@ -230,6 +259,20 @@ body {
   padding: 1rem;
 }
 
+.announcement h6 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.announcement p {
+  margin-top: 4px;
+}
+
 .trend-text {
   opacity: 0.6;
+  font-size: 1rem;
+}
+
+.trend-tag {
+  font-size: 1rem;
 }
