@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  max-height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template: auto 4fr / 1fr 4fr;
   font-family: "Roboto", sans-serif;
